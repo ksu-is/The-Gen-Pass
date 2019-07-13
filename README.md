@@ -1,7 +1,5 @@
 # The-Gen-Pass
 
-## Summer 2019 Project
-
 ## Authors and Contributors
  Thomas Andreas and Mike Grant
  
