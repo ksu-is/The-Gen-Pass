@@ -23,6 +23,6 @@ https://gist.github.com/23maverick23/4131896
 
 https://github.com/ismailtasdelen/Python-Random-Password-Generator
 
+https://pypi.org/project/passwordmeter/0.1.8/
 
-
-
+https://github.com/pbssubhash/PyPassGen/tree/1354fe3733ede0e54b8a2ee3c22da29121d0f7bb
