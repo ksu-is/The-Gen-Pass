@@ -11,4 +11,4 @@
 7. Test the code and fix the bugs. Revise the code as needed - Thomas
 8. Upload to Github repository - Thomas / Mike
 9. Create the powerpoint demonstration
-10. Submit the project
+10. Submit the project.
