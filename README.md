@@ -19,7 +19,7 @@ The Gen Pass creates random passwords form pre-inputted data form the top sites 
 	Allows for generating a password based on contextual information provided by the user.
 
 ## Resources
-https://gist.github.com/23maverick23/4131896
+https://raw.githubusercontent.com/dwyl/english-words/master/words.txt
 
 https://pypi.org/project/passwordmeter/0.1.8/
 
