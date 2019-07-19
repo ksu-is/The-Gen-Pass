@@ -18,7 +18,24 @@ if not isfile('words.txt'):
 
 words=open('words.txt','r').read().split('\n')
 #Add as many special characters as you want
-special_chars=['!','?']
+special_chars=['!','?','$','#','&']
+
+#Password generator function
+
+#In the first for loop we are iterating for as many words as we want defaulting to a value of two, convert it to lower case
+#and capitalize the first letter
+#In the second for loop we will iterate for as many numbers as we want, randomly selecting from 0-9
+#In the thrid loop we wil iterate for as many special characters as we want defaulting to just one of our options
+def create_password(num_words=2,num_numbers=5,num_special=2):
+    pass_str=''
+    for _ in xrange(num_words):
+        pass_str+=choice(words).lower().capitalize()
+    for _ in xrange(num_numbers):
+        pass_str+=str(randint(0,9))
+    for _ in xrange(num_special):
+        pass_str+=choice(special_chars)
+        return pass_str
+
 
 #Password Strength 
 def main():
@@ -27,7 +44,6 @@ def main():
     print('\nPassword: %s'%pass_str)
     print('Strenth: %0.5'%strength)
 
-if _name_=='_main_':
+if __name__=='__main__':
     main()
 
-#Password generator function
