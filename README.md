@@ -4,13 +4,13 @@
  Thomas Andreas and Mike Grant
  
 ## Introduction
-Do you ever create an account with social media, email, banking, school website? How many characters are needed? How are you supposed to remember all the rules for the password? 
+Do you ever create an account with social media, email, banking, school website? How many characters are needed? Is it ever strong enough? 
 The Gen Pass creates random passwords form pre-inputted data form the top sites of today’s users. Who wants to spend the day thinking of a complex password for your login? The Gen Pass will create your password form random characters that never save in our system, creating a secure way of creating account passwords.  
 
 ## Specifications
-	Storing the password requirements on a separate program that will be called upon to insert the data.
+	Ability to test the strength of your password and modify it to meet the need of the user
 
-	The independent site that will be updated quarterly or when users inform the company that the requirements have changed.
+	The ability to modify your password according to the needs of the site/account
 
 	There will be a drop box with preloaded sites that the users can choose from like Facebook, Instagram, Snapchat, Bank of America, and Gmail.
 
