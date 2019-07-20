@@ -6,17 +6,10 @@
 import passwordmeter
 from passwordmeter import test
 #This downloads thousands of words we can use in the generation of our passwords
-from urllib.request import urlopen
-from os.path import isfile
-from random import choice, randint
+import random
+from random import choice,randint
 
-if not isfile('words.txt'):
-    print ('Downloading words.txt')
-    url='https://raw.githubusercontent.com/dwyl/english-words/master/words.txt'
-    with open('words.txt','w') as f:
-        f.write(urlopen(url).read())
-
-words=open('words.txt','r').read().split('\n')
+chars = 'abcdefghigklomnopqrstuvwxyz'
 #Add as many special characters as you want
 special_chars=['!','?','$','#','&']
 
@@ -26,13 +19,14 @@ special_chars=['!','?','$','#','&']
 #and capitalize the first letter
 #In the second for loop we will iterate for as many numbers as we want, randomly selecting from 0-9
 #In the thrid loop we wil iterate for as many special characters as we want defaulting to just one of our options
-def create_password(num_words=2,num_numbers=5,num_special=2):
+def create_password(num_chars=5,num_numbers=4,num_special=1):
     pass_str=''
-    for _ in xrange(num_words):
-        pass_str+=choice(words).lower().capitalize()
-    for _ in xrange(num_numbers):
+    
+    for _ in range(num_chars):
+        pass_str+=random.choice(chars).lower().capitalize()
+    for _ in range(num_numbers):
         pass_str+=str(randint(0,9))
-    for _ in xrange(num_special):
+    for _ in range(num_special):
         pass_str+=choice(special_chars)
         return pass_str
 
@@ -41,8 +35,9 @@ def create_password(num_words=2,num_numbers=5,num_special=2):
 def main():
     pass_str=create_password()
     strength,_=test(pass_str)
-    print('\nPassword: %s'%pass_str)
-    print('Strenth: %0.5'%strength)
+
+    print("\nPassword: %s"%pass_str)
+    print("Strenth: %0.5f"%strength)
 
 if __name__=='__main__':
     main()
