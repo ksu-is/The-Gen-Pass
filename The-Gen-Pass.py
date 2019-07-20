@@ -15,11 +15,11 @@ special_chars=['!','?','$','#','&']
 
 #Password generator function
 
-#In the first for loop we are iterating for as many words as we want defaulting to a value of two, convert it to lower case
+#In the first for loop we are iterating for as many characters as we want defaulting to a value we input, convert it to lower case
 #and capitalize the first letter
 #In the second for loop we will iterate for as many numbers as we want, randomly selecting from 0-9
 #In the thrid loop we wil iterate for as many special characters as we want defaulting to just one of our options
-def create_password(num_chars=5,num_numbers=4,num_special=1):
+def create_password(num_chars=5,num_numbers=4,num_special=3):
     pass_str=''
     
     for _ in range(num_chars):
