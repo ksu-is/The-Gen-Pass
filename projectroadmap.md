@@ -10,5 +10,5 @@
 6. Modify the code and implement changes as needed to satisfy the needs of the project - Thomas - **Done**
 7. Test the code and fix the bugs. Revise the code as needed - Thomas - **Done**
 8. Upload to Github repository - Thomas / Mike - **Done**
-9. Create the powerpoint demonstration - **Mike**
+9. Create the powerpoint demonstration - Mike - **Done**
 10. Submit the project. - Thomas/ Mike - **Done**
