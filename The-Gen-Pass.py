@@ -19,11 +19,13 @@ special_chars=['!','?','$','#','&']
 #and capitalize the first letter
 #In the second for loop we will iterate for as many numbers as we want, randomly selecting from 0-9
 #In the thrid loop we wil iterate for as many special characters as we want defaulting to just one of our options
+
+
 def create_password(num_chars=5,num_numbers=4,num_special=3):
     pass_str=''
     
     for _ in range(num_chars):
-        pass_str+=random.choice(chars).lower().capitalize()
+        pass_str+=random.choice(chars).capitalize()
     for _ in range(num_numbers):
         pass_str+=str(randint(0,9))
     for _ in range(num_special):
