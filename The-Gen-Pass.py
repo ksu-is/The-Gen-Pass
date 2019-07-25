@@ -2,7 +2,7 @@
 
 #import libraries first
 #password meter will allow us to test the strenghth of the password
-#We will use the passwordmeter test function to check strength as wella s tak advantage of it's advice
+#We will use the passwordmeter test function to check strength 
 # add passwordmeter using path -m pip install password meter in the terminal
 import passwordmeter
 from passwordmeter import test
